@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    flex-direction: column; /* 垂直排列子元素 */
+    margin: 0;
+    height: 100vh; /* 使用视口高度 */
+
+    .output
+
+{
+    justify-content: center; /* 水平居中 */
+    width: 300px;
+    height: 5vh;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    background-color: rgb(192, 191, 191);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 4vh;
+    text-align: right;
+    outline: none; /* 移除默认的聚焦边框 */
+    transition: all 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+
+.output:hover {
+    background-color: gray;
+    color: yellowgreen;
+    border-color: yellowgreen;
+    transform: scale(1.1); /* 放大 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button, img {
+    width: 75px;
+    height: 50px;
+    color: white;
+    border: 2px solid transparent;
+    cursor: grab;
+    margin-bottom: 7px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.key-number {
+    background-color: #28a745;
+}
+
+    .key-number:hover {
+        background-color: white;
+        color: #28a745;
+        border-color: #28a745;
+        transform: scale(1.1); /* 放大 */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+.key-operate, .key-operate2 {
+    background-color: orange;
+}
+
+    .key-operate:hover, .key-operate2:hover {
+        background-color: white;
+        color: orange;
+        border-color: orange;
+        transform: scale(1.1); /* 放大 */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+}
